@@ -1,0 +1,182 @@
+@charset 'UTF-8';
+*{
+    font-family: var(--fontFamily);
+}
+:root{
+    --colorBg: #8C1F28;
+    --fontFamily: arial;
+
+    --color1: #01415B;
+    --color2: #005148;
+    --color3: #019587;
+    --color4: #A6BC09;
+    --color5: #CCEA8D;
+    --color6: #591C21;
+    --color7: #044040;
+    --color8: #D92525;
+    --color9:  #F29F05;
+    --color10: #000000;
+    --color11: #f49d12; 
+    --color12: #b2abab;
+    --color13: #019587;
+    --color14: #ffffff;
+    --color15: #dfdad185;
+    --color16: #F27457;
+    --color17: #BF665E;
+    --color18: #253659;
+    --color19: #BF4158;
+    --color20: #F2AEC1;
+    --color21: #73715C;
+    --color22: #563A22;
+    --color23: #F18836;
+    --color24: #9B7C64;
+    --color25: #ea7628;
+    --color26: #01415B;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    min-height: 100%;
+}
+body{
+    background-color: var(--color11);
+    font-family: var(--fontFamily);
+    
+}
+.logo-alura{
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 10px;
+    height: 200px;
+    width: auto;
+    
+}
+h1{
+    font-size: 4em;
+    text-align: right;
+    padding: 60px 300px;
+    font-weight: bolder;
+    background-color: var(--color26);
+    color: var(--color14);
+    height: 220px;
+}
+.area-texto-1, .area-texto-2{
+    width: 500px;
+    height: 400px;
+    margin: 10px;
+   
+}
+.btn-outline-danger-descrip{
+    color: var(--color7);
+    border: 1px solid var(--color7) ;  
+}
+section{
+    display: inline-block;
+    width: 90vh;
+}
+button{
+    margin: 10px;
+}
+::placeholder{
+    opacity: .5;
+}
+.btn-outline-danger-descrip:hover{
+    background-color: var(--color7);
+    color: var(--color14);
+    border-color: var(--color7); 
+}
+footer{
+    text-align: center;
+    height: 50px;
+}
+footer p{
+    padding-top: 30px;
+    text-align: center;
+}
+.site-rodape{
+    background-color: var(--color26);
+    padding-bottom: 20px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+}
+p, .desenvolvedor-site{
+
+    text-align: center;
+    color: var(--color14);
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/*CONFIGURAÇÃO RESPONSIVA*/
+
+@media screen and (max-width: 480px){
+    
+    header{
+        width: 100vw;
+    }
+    main{
+        margin: 0 auto;
+        
+
+    }
+    .logo-alura{
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        border-radius: 50%;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    h1{
+        background-color: var(--color26);
+        color: var(--color14);
+        height: 150px;
+        padding-left: 140px;
+        text-align: center;
+        font-size: 2.5em;
+        padding-top: 20PX;
+    }
+    label{
+        margin: 10px 0 0 10px;
+        
+    }
+    .area-texto-1, .area-texto-2{
+        width: 350px;
+        height: 300px;
+        margin: 10px;
+    }
+    footer{
+        text-align: center;
+        font-size: .7em; 
+        position: absolute;
+        height: 50px;
+        width: 100vw;
+        padding-bottom: 0px;
+        
+    }
+
+    .site-rodape{
+        background-color: var(--color26);
+        padding-bottom: 20px;
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+    }
+    p, .desenvolvedor-site{
+    
+        text-align: center;
+        color: var(--color14);
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+
+
+}
